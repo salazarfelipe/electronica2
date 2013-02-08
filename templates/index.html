@@ -1,0 +1,270 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title %}{% trans "Home" %}{% endblock %}
+
+{% block breadcrumb_menu %}
+<li class="active">{% trans "Home" %}</li>
+{% endblock %}
+
+{% block main %}
+<p style="text-align: center;"><strong>UNIVERSIDAD TECNOLÓGICA DE PEREIRA</strong></p>
+<p style="text-align: center;"><strong>FACULTAD DE INGENIERÍAS: ELÉCTRICA, FÍSICA Y CIENCIAS DE LA COMPUTACIÓN</strong></p>
+<p style="text-align: center;"><strong>CIENCIAS DE LA COMPUTACIÓN</strong></p>
+<p style="text-align: center;"><strong>PROGRAMA DE INGENIERÍA DE SISTEMAS Y COMPUTACIÓN</strong></p>
+
+<pre><strong>ASIGNATURA:  ELECTRÓNICA II</strong>
+<strong>CÓDIGO:      IS633</strong>
+<strong>CRÉDITOS:    3</strong>
+<strong>INTENSIDAD:  4 HORAS SEMANALES</strong>
+<strong>REQUISITOS:  IS533 ELECTRONICA I</strong>
+<strong>LIBRO GUIA:  Digital Fundamentals with VHDL.
+  Thomas Floyd - Fundamentos Digitales. Thomas Floyd.</strong></pre>
+<p style="text-align: left;"><strong>JUSTIFICACIÓN</strong></p>
+<p style="text-align: justify;">Con la creación del transistor dependiente de elementos semiconductores, como el silicio y el germanio, en la década del 50, se marcó un camino directo en la evolución de la electrónica generando un salto necesario y fundamental desde su parte análoga a su parte digital. Esto llevo a que la velocidad de desarrollo y su aplicación de nuevas tecnologías, basadas en cálculos y modelos matemáticos anteriores, pudieran ser plasmados y aplicados.</p>
+<p style="text-align: justify;">La digitalización de la electrónica generó un avance vertiginoso en varios campos entre los que podemos contar la comunicación de datos y la computación. Basándonos primordialmente en el segundo se ve una necesidad radical, en conjunto con materias como arquitectura de computadores, de mostrar, analizar y diseñar diferentes tipos de arquitecturas, llevando esto a que nuestros futuros ingenieros entiendan plenamente los tipos de máquinas computacionales existentes en la actualidad, y que por medio de los principios por nosotros entregados comprendan los nuevos cambios tecnológicos sobre las mismas.</p>
+<p style="text-align: justify;">Esto llevará a que el ingeniero de sistemas y computación, conozca no solamente el software de su creación, sino también las limitaciones y beneficios que puede otorgarle el hardware sobre el cual puede aplicar su diseño, para así generar una mejor solución tanto de rendimiento como de desempeño.</p>
+<p style="text-align: left;"><strong>OBJETIVOS</strong></p>
+<p style="text-align: left;"><strong>OBJETIVO GENERAL</strong></p>
+<p style="text-align: justify;">Diseñar, analizar e investigar los principios digitales bajo los cuales operan todas las arquitecturas y circuitos de control y comunicación aplicados en la actualidad.</p>
+<p style="text-align: left;"><strong>OBJETIVOS ESPECÍFICOS</strong></p>
+
+<ul>
+	<li style="text-align: justify;">Profundizar en el manejo y conocimiento de lenguajes para descripción de Hardware (VHDL)</li>
+	<li style="text-align: justify;">Analizar y simular las diferentes partes de los sistemas de cómputo (memoria, registros, alu, sistema de comunicación, sistemas de control)</li>
+	<li style="text-align: justify;">Diseño e implementación de un procesador y/o máquina de estados con características específicas.</li>
+	<li style="text-align: justify;">Llevar dicho procesador y/o máquina de estados a relacionarse con sistemas de entrada salida para desarrollar aplicaciones específicas.</li>
+</ul>
+<strong>CONTENIDO</strong>
+<ul>
+	<li><strong>1. LÓGICA SECUENCIAL</strong>
+		<ul>
+			<li>1.1. Relojes(Clock)</li>
+			<li>1.2. Introducción al Latch</li>
+			<li>1.3. Tipos de Latch</li>
+			<li>1.4. Flip-flops disparados por flanco</li>
+			<li>1.5. Detector de transición</li>
+			<li>1.6. Tipos de Flip-flops</li>
+			<li>1.7. Características de operación de los flip-flops</li>
+			<li>1.8. Aplicación de ls flip-flops</li>
+			<li>1.9. Implementación en VHDL</li>
+		</ul>
+	</li>
+</ul>
+<ul>
+	<li><strong>2. REGISTROS</strong>
+		<ul>
+			<li>2.1. Introducción al regisrto</li>
+			<li>2.2. Funciones básicas de un registro de corrimiento</li>
+			<li>2.3. Registros de corrimiento de entrada y salida serial</li>
+			<li>2.4. Registros de corrimiento de entrada y salida paralelo</li>
+			<li>2.5. Otras configuraciones de registros de corrimiento</li>
+			<li>2.6. Aplicaciones de registros de corrimiento</li>
+			<li>2.7. Implementación en VHDL</li>
+		</ul>
+	</li>
+</ul>
+
+<ul>
+	<li><strong>3. CONTADORES</strong>
+		<ul>
+			<li>3.1. Contadores de operación asíncrona</li>
+			<li>3.2. Contadores de operación síncrona</li>
+			<li>3.3 Contadores síncronos de subida/bajada</li>
+			<li>3.4. Diseño de contadores síncronos</li>
+			<li>3.5 Contadores en cascada</li>
+			<li>3.6. Decodificación de contadores</li>
+			<li>3.7. Aplicación de contadores</li>
+			<li>3.8. Contadores usando VHDL</li>
+		</ul>
+	</li>
+</ul>
+
+<ul>
+	<li><strong>4. MÁQUINAS DE ESTADO</strong>
+		<ul>
+			<li>4.1. Introducción a las máquinas de estado</li>
+			<li>4.2. Máquinas de Mealy</li>
+			<li>4.3. Máquinas de Moore</li>
+			<li>4.4. Máquinas de estado finito</li>
+			<li>4.5 Implementación en VHDL</li>
+		</ul>
+	</li>
+</ul>
+
+<ul>
+	<li><strong>5. MEMORIAS Y EL ALMACENAMIENTO</strong>
+		<ul>
+			<li>5.1.  Memorias de semiconductores</li>
+			<li>5.2.  Memorias de acceso aleatorio (RAM)</li>
+			<li>5.3.  Memorias de sólo lectura (ROM)</li>
+			<li>5.4.  Memorias programables de solo lectura (PROM, EPROM)</li>
+			<li>5.5.  Memorias Flash</li>
+			<li>5.6.  Memoria de expansión</li>
+			<li>5.7.  Tipos Especiales de Memoria</li>
+			<li>5.8.  Almacenamiento magnético y óptico</li>
+			<li>5.9.  Aplicaciones a sistemas digitales</li>
+			<li>5.10. Implementación de diferente tipo de memorias en VHDL</li>
+		</ul>
+	</li>
+</ul>
+<ul>
+	<li><strong>6. INTRODUCCIÓN A LOS MICROPROCESADORES, COMPUTADORES Y BUSES</strong>
+<ul>
+	<li>6.1.  El microprocesador y el computador</li>
+	<li>6.2.   Revisión histórica de la familia de microprocesadores</li>
+	<li>6.3.  El microprocesador 8086/8088</li>
+	<li>6.4.  El modelo de software para el procesador Pentium</li>
+	<li>6.5.  La unidad central de proceso</li>
+	<li>6.6.  La memoria</li>
+	<li>6.7.  Los puertos de entrada salida</li>
+	<li>6.8.  El acceso directo a memoria (DMA)</li>
+	<li>6.9.  Sistemas de interface internos</li>
+	<li>6.10. Buses estándar</li>
+</ul>
+</li>
+</ul>
+<ul>
+	<li><strong>7. SISTEMAS ENTRADA SALIDA</strong>
+<ul>
+	<li>7.1.  Introducción</li>
+	<li>7.2. Tipos y características de dispositivos E/S</li>
+	<li>7.3. Buses</li>
+	<li>7.4. Interface de dispositivos de E/S y Controlado</li>
+</ul>
+</li>
+</ul>
+<ul>
+	<li><strong>8. INTERFASE CON EL MUNDO ANALÓGICO</strong>
+<ul>
+	<li>8.1.  Introducción a los sensores y actuadores</li>
+	<li>8.2.  Tipos de sensores y actuadores</li>
+	<li>8.3.  Sensores análogos y digitales</li>
+	<li>8.4.  Sensores aplicados</li>
+	<li>8.5.  Conversión Digital - Analógica</li>
+	<li>8.6.  Conversión Analógica - Digital</li>
+</ul>
+</li>
+</ul>
+<ul>
+	<li><strong>9. DISEÑO E IMPLEMENTACIÓN DE UN SISTEMA ELECTRÓNICO</strong>
+<ul>
+	<li>9.1.  Diseño e implementación de funciones básicas</li>
+	<li>9.2.  Diseño e implementación del camino de datos</li>
+	<li>9.3.  Diseño e implementación de los sistemas de censado</li>
+	<li>9.4.  Diseño e implementación del módulo de control</li>
+	<li>9.5. Simulación y pruebas</li>
+</ul>
+</li>
+</ul>
+<strong>METODOLOGÍA</strong>
+
+<strong>COMPETENCIAS</strong>
+
+<strong>COMPETENCIAS TRANSVERSALES/GENÉRICAS:</strong>
+<ul>
+	<li>Aprendizaje autónomo</li>
+	<li>Capacidad de análisis y síntesis</li>
+	<li>Capacidad de aplicar los conocimientos a la práctica</li>
+	<li>Resolución de problemas</li>
+	<li>Trabajo individual y en equipos</li>
+	<li>Comunicación oral y escrita</li>
+</ul>
+<strong>COMPETENCIAS ESPECÍFICAS</strong>
+<ul>
+	<li>Cognitivas (saber):
+<ul>
+	<li>Idioma</li>
+	<li>Matemáticas</li>
+	<li>Conocimientos de Informática</li>
+	<li>Procedimentales/instrumentales (saber hacer)</li>
+	<li>Redacción en interpretación de documentación técnica</li>
+	<li>Estimulación y programación del trabajo</li>
+</ul>
+</li>
+</ul>
+<ul>
+	<li>Actitudinales (ser):
+<ul>
+	<li>Calidad</li>
+	<li>Toma de decisión</li>
+	<li>Capacidad de iniciativa y participación</li>
+</ul>
+</li>
+</ul>
+<strong>TÉCNICAS DOCENTES</strong>
+
+Las técnicas docentes que se van a utilizar son:
+<ul>
+	<li>Clases de teoría y práctica</li>
+	<li>Tutorías colectivas de teoría</li>
+	<li>Tutorías colectivas de prácticas</li>
+	<li>Tutorías individualizadas</li>
+</ul>
+<strong>DESARROLLO Y JUSTIFIACIÓN:</strong>
+
+<strong>Clases de teorías:</strong>
+<ul>
+	<li style="text-align: justify;">Se hará una reseña inicial del contenido de cada tema y se indicará su relación con los otros temas</li>
+	<li style="text-align: justify;">Al comenzar la explicación de una sección de un tema, se indicarán las relaciones que posee con otras secciones del mismo tema o de temas diferentes.</li>
+	<li style="text-align: justify;">Se explicará detenidamente cada sección de cada tema teórico</li>
+</ul>
+<strong>Tutorías colectivas de teoría o prácticas</strong>
+<br>
+<p style="text-align: justify;">Es una actividad desarrollada dentro de las horas de clase</p>
+<ul>
+	<li style="text-align: justify;">El profesor responderá las preguntas que le planteen los estudiantes procurando que ellos intenten deducir las respuestas correctas</li>
+	<li style="text-align: justify;">Se procurará que las preguntas que se planteen no sean dudas particulares de un estudiante, sino dudas generales que puedan tener la mayoría de los     estudiantes. Las dudas partículares se deben plantear en las tutorías particulares.</li>
+	<li style="text-align: justify;">El profesor también prodrá plantear preguntas a los estudiantes para comprobar si han aprendido correctamente los conceptos fundamentales de la asignatura.</li>
+</ul>
+<strong>Tutorías Individualizadas</strong>
+<p style="text-align: justify;">
+Según el reglamento estudiantil vigente, en su artículo 60 ("ARTICULO 60°. El estudiante de la Universidad tiene derecho a: ... Ser asistido, asesorado y oído por quienes tiene la responsabilidad administrativa y <strong>docente</strong>" . resaltado nuestro), estas tutorías están enmarcadas dentro  de la actividad docente y los horarios deberán ser concertados con todos los estudiantes o con la mayoría cuando con todos no sea posible.
+</p>
+<ul>
+	<li style="text-align: justify;">Los estudiantes con el fín de poder organizar y garantizar que la atención sea individual, deberá solicitar con anticipación cita con el profesor.</li>
+	<li style="text-align: justify;">Los estudiantes deben utilizar estas tutorías a lo largo de todo el curso y no sólo antes de la fecha del exámen</li>
+	<li style="text-align: justify;">El profesor intentará resolver las dudas particulares que pueda tener cada estudiante en relación con los temas de teoría, los trabajos de las exposiciones, las prácticas, etc.</li>
+	<li style="text-align: justify;">Aunque las dudas más simples puedan plantearse mediante correo electrónico, es preferible que haya una reunión del profesor y el estudiante para resolver las dudas más complejas.</li>
+	<li style="text-align: justify;">La Universidad podrá disponer como recurso adicional un "asistente de cátedra o monitor", que podrá ser un estudiante de semestres superiores, según el reglamento que sobre este particular maneje la Universidad.</li>
+</ul>
+<br>
+<strong>MECANISMO DE CONTROL Y SEGUIMIENTO</strong>
+
+El profesor podrá comprobar el grado de seguimiento de la asignatura mediante:
+<ul>
+	<li>La asistencia a las clases de teoría y prácticas</li>
+	<li>La corrección de las prácticas</li>
+	<li>Las tutorías personales</li>
+	<li>Los parciales</li>
+	<li>Los exámenes de corta duración (Quiz)</li>
+</ul>
+<br>
+<strong>EVALUACIÓN</strong>
+
+<p style="text-align: justify;">Según el reglamento estudiantil vigente, en sus artículos 72 y 73 " <strong>ARTICULO 72°: </strong>Se entiende por Prueba Parcial aquella que se realiza individualmente para verificar el logro de los objetivos de las diferentes unidades o temas en que se divide cada asignatura. Estas <strong>no podrán ser menos de dos </strong>para cada asignatura. <strong>ARTICULO 73° : </strong>Se entiende por Prueba Final aquella que se realiza individualmente para verificar el logro de los objetivos generales de cada asignatura. Esta prueba se realizará con estricta observancia de las fechas establecidas en el calendario académico ...", resaltado nuestro.
+	<br><br>
+	Se harán tres exámenes parciales, un exámen final y quices semanales con los siguientes porcentajes:</p>
+
+<ol>
+	<li><pre><strong>Primer Parcial       20%</strong></pre></li>
+	<li><pre><strong>Segundo Parcial      20%</strong></pre></li>
+	<li><pre><strong>Tercer Parcial       20%</strong></pre></li>
+	<li><pre><strong>Quíces y Talleres    20%</strong></pre></li>
+	<li><pre><strong>Proyecto Final       20%</strong></pre></li>
+</ol>
+<br><br>
+<strong>BIBLIOGRAFÍA</strong>
+<ul>
+	<li>HENNESY. John L., PARTTERSON, David A., "Computer Architecture: A Quantitative Approach", Fourth Edition, 2007, ISBN 978-0-12-370490-0</li>
+	<li>HENNESY. John L., PARTTERSON, David A., "Computer Organization and Design: The Hardware Software Interface", Third Edition, 2005, ISBN 1-55860-604-1</li>
+	<li>FLOY, THOMAS, "Digital Fundamentals whith VHDL"</li>
+</ul>
+
+
+<br><br>
+<strong>LINK DE INTERÉS</strong><br><br>
+<pre><a href="http://sirius.utp.edu.co">http://sirius.utp.edu.co</a><br></pre>
+<pre><a href="http://www.xilinx.com">http://www.xilinx.com</a></pre>
+{% endblock %}
